@@ -20,7 +20,6 @@ public class ApplicationManager {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-
     }
 
     @AfterMethod
