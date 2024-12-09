@@ -38,6 +38,7 @@ public class LoginTests extends ApplicationManager {
         UserDto user  = new UserDto("", password);
         new HomePage(getDriver()).clickBtnLoginHeader();
         new LoginPage(getDriver()).typeLoginForm(user);
+        new LoginPage(getDriver()).closeAlert();
         Assert.assertTrue(new LoginPage(getDriver())
                 .validateErrorMessageLogin("Login Failed with code 401"));
     }
