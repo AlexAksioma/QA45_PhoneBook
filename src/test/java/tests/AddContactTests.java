@@ -26,7 +26,7 @@ public class AddContactTests extends ApplicationManager {
         addPage = new AddPage(getDriver());
     }
 
-    @Test
+    @Test(invocationCount = 1)
     public void addNewContactPositiveTest(){
         ContactDtoLombok contact = ContactDtoLombok.builder()
                 .name("Name123")
