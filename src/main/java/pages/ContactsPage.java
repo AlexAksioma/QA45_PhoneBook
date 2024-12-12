@@ -40,4 +40,6 @@ public class ContactsPage extends BasePage{
         pause(3);
         return btnSignOut.isDisplayed();
     }
+
+
 }

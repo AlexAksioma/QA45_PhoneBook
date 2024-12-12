@@ -1,11 +1,14 @@
 package pages;
 
 import dto.ContactDtoLombok;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddPage extends BasePage {
     public AddPage(WebDriver driver) {
@@ -36,5 +39,16 @@ public class AddPage extends BasePage {
         inputAddress.sendKeys(contact.getAddress());
         inputDescription.sendKeys(contact.getDescription());
         btnSave.click();
+    }
+
+    public boolean validateUrlContacts(){
+        return validateUrl( "contacts", 5);
+    }
+    public String closeAlertAndReturnText() {
+        Alert alert = new WebDriverWait(driver, 5)
+                .until(ExpectedConditions.alertIsPresent());
+        String text = alert.getText();
+        alert.accept();
+        return text;
     }
 }
