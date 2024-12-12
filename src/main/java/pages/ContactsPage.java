@@ -27,8 +27,9 @@ public class ContactsPage extends BasePage{
     }
 
     public void clickBtnSignOut(){
-        pause(3);
-        btnSignOut.click();
+        //pause(3);
+        //btnSignOut.click();
+        clickWait(btnSignOut, 5);
     }
 
     public void clickBtnAdd(){
@@ -37,7 +38,7 @@ public class ContactsPage extends BasePage{
 
 
     public boolean isSignOutPresent(){
-        pause(3);
+        //pause(3);
         return btnSignOut.isDisplayed();
     }
 
