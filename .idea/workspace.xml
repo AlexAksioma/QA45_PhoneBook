@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e9b7824-436f-4fe4-a95d-f8f84e1c5de4" name="Changes" comment="delete contact test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/EditContactTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/solution.txt" afterDir="false" />
+    <list default="true" id="8e9b7824-436f-4fe4-a95d-f8f84e1c5de4" name="Changes" comment="added generate">
+      <change afterPath="$PROJECT_DIR$/src/main/java/data_provider/DPContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data_provider/contact_table.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContactsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/EditContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EditContactTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,12 @@
     "last_opened_file_path": "C:/QA_Auto_Projects/QA_45/QA45_PhoneBook"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.EditContactTests.editContactPositiveTest">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QA_Auto_Projects\QA_45\QA45_PhoneBook\src\main\resources\data_provider" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.EditContactTests.editContactTestDPfromFile">
     <configuration name="AddContactTests.addNewContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,7 +145,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginNegativeTest_emptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EditContactTests.editContactTestDP" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -151,7 +158,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginNegativeTest_emptyEmail&quot;" />
+            <option value="&quot;tests.EditContactTests.editContactTestDP&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,7 +169,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EditContactTests.editContactTestDPfromFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -175,7 +182,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginPositiveTest&quot;" />
+            <option value="&quot;tests.EditContactTests.editContactTestDPfromFile&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EditContactTests.editContactTestDPfromFile" />
+        <item itemvalue="Gradle.EditContactTests.editContactTestDP" />
         <item itemvalue="Gradle.EditContactTests.editContactPositiveTest" />
         <item itemvalue="Gradle.AddContactTests.addNewContactPositiveTest" />
         <item itemvalue="Gradle.DeleteContactTests.deleteContactPositiveTest" />
-        <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
-        <item itemvalue="Gradle.LoginTests.loginNegativeTest_emptyEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -269,8 +276,19 @@
       <option name="project" value="LOCAL" />
       <updated>1734029302528</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added generate">
+      <option name="closed" value="true" />
+      <created>1734367534801</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734367534801</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="started registration" />
@@ -280,6 +298,7 @@
     <MESSAGE value="add contact negative" />
     <MESSAGE value="add click wait" />
     <MESSAGE value="delete contact test" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete contact test" />
+    <MESSAGE value="added generate" />
+    <option name="LAST_COMMIT_MESSAGE" value="added generate" />
   </component>
 </project>
