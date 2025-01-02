@@ -14,12 +14,16 @@ import pages.HomePage;
 import pages.LoginPage;
 import utils.TestNGListener;
 
+import static utils.PropertiesReader.*;
+
 @Listeners(TestNGListener.class)
 
 public class AddContactTests extends ApplicationManager {
 
     SoftAssert softAssert = new SoftAssert();
-    UserDto user = new UserDto("qa_mail@mail.com", "Qwerty123!");
+    //UserDto user = new UserDto("qa_mail@mail.com", "Qwerty123!");
+    UserDto user = new UserDto(getProperty("login.properties", "email"),
+                               getProperty("login.properties", "password"));
     AddPage addPage;
 
     @BeforeMethod
