@@ -48,9 +48,9 @@ public class DPContact {
         BufferedReader bufferedReader;
         try {
             bufferedReader = new BufferedReader(new FileReader("src/main/resources/data_provider/contact_table.csv"));
-            String line = bufferedReader.readLine();
+            String line = bufferedReader.readLine();   //name1,lastName1,12345678901,email1@mail.com,address1,desc1
             while (line != null) {
-                String[] splitArray = line.split(",");
+                String[] splitArray = line.split(",");   //0-name1  1-lastName1   ...
                 contactList.add(ContactDtoLombok.builder()
                         .name(splitArray[0])
                         .lastName(splitArray[1])
