@@ -1,13 +1,11 @@
 package utils;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static utils.TakeScreenShot.*;
 public class WDListener extends AbstractWebDriverEventListener {
 
     Logger logger = LoggerFactory.getLogger(WDListener.class);
@@ -44,6 +42,8 @@ public class WDListener extends AbstractWebDriverEventListener {
     @Override
     public void onException(Throwable throwable, WebDriver driver) {
         super.onException(throwable, driver);
+        logger.info("created screenshot -->");
+        takeScreenShot((TakesScreenshot) driver);
     }
 
     @Override
