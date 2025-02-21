@@ -29,7 +29,7 @@ public class AddContactTests extends ApplicationManager {
                                getProperty("login.properties", "password"));
     AddPage addPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login(){
         new HomePage(getDriver()).clickBtnLoginHeader();
         new LoginPage(getDriver()).typeLoginForm(user);
@@ -37,7 +37,7 @@ public class AddContactTests extends ApplicationManager {
         addPage = new AddPage(getDriver());
     }
 
-    @Test(invocationCount = 1)
+    @Test(invocationCount = 1, groups = "smoke")
     public void addNewContactPositiveTest(){
         ContactDtoLombok contact = ContactDtoLombok.builder()
                 .name("Name123")

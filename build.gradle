@@ -18,9 +18,15 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.28'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
 
-    implementation 'ch.qos.logback:logback-classic:1.3.7'
+    implementation 'ch.qos.logback:logback-classic:1.4.12'
 }
 
 test {
     useTestNG()
+}
+
+task smoketests(type: Test){
+    useTestNG(){
+        suites 'src/test/resources/smoketests.xml'
+    }
 }

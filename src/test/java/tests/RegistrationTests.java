@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class RegistrationTests extends ApplicationManager {
 
-    @Test
+    @Test(groups = "smoke")
     public void registrationPositiveTest(){
         int i = new Random().nextInt(1000);
         new HomePage(getDriver()).clickBtnLoginHeader();

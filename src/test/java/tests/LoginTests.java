@@ -19,7 +19,7 @@ public class LoginTests extends ApplicationManager {
 
     private String email, password;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void registration(){
         int i = new Random().nextInt(1000);
         email = "frodo_baggins_"+i+"@gmail.com";
@@ -29,7 +29,7 @@ public class LoginTests extends ApplicationManager {
         new ContactsPage(getDriver()).clickBtnSignOut();
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void loginPositiveTest(){
         UserDto user  = new UserDto(email, password);
         new HomePage(getDriver()).clickBtnLoginHeader();
