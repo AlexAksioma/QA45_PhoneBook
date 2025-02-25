@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e9b7824-436f-4fe4-a95d-f8f84e1c5de4" name="Changes" comment="delete scr shot1" />
+    <list default="true" id="8e9b7824-436f-4fe4-a95d-f8f84e1c5de4" name="Changes" comment="delete scr shot3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -351,7 +351,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740510287803</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="delete scr shot2">
+      <option name="closed" value="true" />
+      <created>1740510350021</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1740510350021</updated>
+    </task>
+    <task id="LOCAL-00020" summary="delete scr shot3">
+      <option name="closed" value="true" />
+      <created>1740510683957</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1740510683957</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -372,6 +388,8 @@
     <MESSAGE value="screen shot" />
     <MESSAGE value="delete scr shot" />
     <MESSAGE value="delete scr shot1" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete scr shot1" />
+    <MESSAGE value="delete scr shot2" />
+    <MESSAGE value="delete scr shot3" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete scr shot3" />
   </component>
 </project>

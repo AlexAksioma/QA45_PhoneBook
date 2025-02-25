@@ -20,7 +20,7 @@ public class RegistrationTests extends ApplicationManager {
         int i = new Random().nextInt(1000);
         new HomePage(getDriver()).clickBtnLoginHeader();
         new LoginPage(getDriver()).typeRegistrationForm("frodo_baggins_123"+i+"@gmail.com",
-                "Password123!111");
+                "Password123!");
         Assert.assertTrue(new ContactsPage(getDriver()).isSignOutPresent());
     }
 
