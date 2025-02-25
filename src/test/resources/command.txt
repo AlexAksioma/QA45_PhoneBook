@@ -1,0 +1,2 @@
+cd C:\QA_Auto_Projects\QA_45\QA45_PhoneBook
+gradlew clean smoketests

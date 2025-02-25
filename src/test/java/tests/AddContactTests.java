@@ -48,7 +48,7 @@ public class AddContactTests extends ApplicationManager {
                 .description("description")
                 .build();
         addPage.typeContactForm(contact);
-        takeScreenShot((TakesScreenshot) getDriver());
+        //takeScreenShot((TakesScreenshot) getDriver());
         Assert.assertTrue(new ContactsPage(getDriver())
                 .validateLastElementContactList(contact));
     }
