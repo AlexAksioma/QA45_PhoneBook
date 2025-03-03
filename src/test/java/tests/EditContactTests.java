@@ -25,14 +25,14 @@ public class EditContactTests extends ApplicationManager {
 
     ContactsPage contactsPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login(){
         new HomePage(getDriver()).clickBtnLoginHeader();
         new LoginPage(getDriver()).typeLoginForm(user);
         contactsPage = new ContactsPage(getDriver());
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void editContactPositiveTest(){
         ContactDtoLombok contact = ContactDtoLombok.builder()
                 .name(generateString(5))

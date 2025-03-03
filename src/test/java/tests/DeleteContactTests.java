@@ -20,14 +20,14 @@ public class DeleteContactTests extends ApplicationManager {
 
     ContactsPage contactsPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() {
         new HomePage(getDriver()).clickBtnLoginHeader();
         new LoginPage(getDriver()).typeLoginForm(user);
         contactsPage = new ContactsPage(getDriver());
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void deleteContactPositiveTest() {
         int quantityBeforeDelete = contactsPage.quantityContacts();
         System.out.println("quantityBeforeDelete--> " + quantityBeforeDelete);

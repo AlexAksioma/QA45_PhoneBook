@@ -11,6 +11,8 @@
             <class name="tests.LoginTests"/>
             <class name="tests.RegistrationTests"/>
             <class name="tests.AddContactTests"/>
+            <class name="tests.EditContactTests"/>
+            <class name="tests.DeleteContactTests"/>
         </classes>
     </test>
 </suite>
